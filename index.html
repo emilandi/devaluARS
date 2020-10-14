@@ -21,25 +21,17 @@
         
         <!-- <h3>CALCULADORA</h3> -->
         <h3>DevaluARS</h3>
-        <input type="number" class="form-control" placeholder="Importe Pesos"  id="txtcantidad" class="" type="text">
-               
-        <!-- https://es.wikipedia.org/wiki/Peso_Moneda_Nacional
-        https://es.wikipedia.org/wiki/Peso_Ley_18.188
-        https://es.wikipedia.org/wiki/Peso_argentino_(moneda)
-        https://es.wikipedia.org/wiki/Peso_(moneda_de_Argentina) -->
-        <!-- Pesos Moneda Nacional (1881 - 1969)
-        Pesos Argentinos (1983 - 1985)
-        Pesos Ley 18.188 (1970 - 1983)
-        Australes (1985 - 1991) -->
-        
+
+        <input type="number" class="form-control" placeholder="Importe Pesos"  id="txtcantidad" class="" type="text">               
+          
             <div class="container-billetes">
                 
                 <div class="billetes">
-                    <a href=" https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">
+                    <a href="https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">
                         <img src="img/pesosmnac10.png" alt=""> 
                     </a>
                     <span>Pesos Moneda Nacional (1881 - 1969)</span>
-                    <p id="r1"></p>                
+                    <p id="r1" class="result"></p>                
                     <span class="desc">El Peso Moneda Nacional (símbolo: m$n, ISO 4217: ARM) fue el papel moneda vigente en la Argentina en el período 1881-1969. 
                         Fue creado mediante la Ley 1.130, sancionada el 5 de noviembre de 1881 con el objetivo de unificar el sistema monetario en el país, que hasta ese entonces había sido bastante caótico debido a la variedad de tipos de moneda: pesos moneda corriente, Peso Fuerte y la libre circulación de monedas extranjeras. 
                         Esta ley determinó la unidad monetaria de la Argentina a través del peso oro y plata y dispuso que los bancos de emisión debían renovar toda su emisión de billetes a moneda nacional. 
@@ -52,7 +44,7 @@
                         <img src="img/pley18.jpg" alt=""> 
                     </a>                    
                     <span>Pesos Ley 18.188 (1970 - 1983)</span>  
-                    <p id="r2"></p>
+                    <p id="r2" class="result"></p>
                     <span class="desc">
                         El Peso Ley 18 188 (Símbolo: $, ISO 4217: ARL) fue la moneda vigente en la Argentina en el período 1970-1983, popularmente conocida como peso ley. 
                         Cada peso ley equivalía a 100 pesos moneda nacional y a 2500 pesos moneda corriente.                        
@@ -68,7 +60,7 @@
                         <img src="img/persoarg83.jpg" alt=""> 
                     </a>              
                     <span>Peso Argentino (1970 - 1983)</span>      
-                    <p id="r3"></p>
+                    <p id="r3" class="result"></p>
                     <span class="desc">
                         El peso argentino fue creado mediante la Ley 22.707 del 6 de enero de 1983, y reemplazó al peso Ley 18.188. 
                         Cada peso argentino equivalía a 10 000 pesos Ley 18.188, y a diferencia del anterior cambio de moneda no hubo resellado de billetes. 
@@ -82,7 +74,7 @@
                         <img src="img/aust100.jpg" alt=""> 
                     </a>
                     <span>Australes (1985 - 1991)</span>
-                    <p id="r4"></p>
+                    <p id="r4" class="result"></p>
                     <span class="desc">
                         El austral fue la moneda de curso legal de la República Argentina desde el 15 de junio de 1985 hasta el 31 de diciembre de 1991, cuando se transicionó al peso convertible. 
                         Su símbolo era una A con el detalle de que la línea horizontal era doble (₳, U+20B3 ₳ ).
@@ -90,10 +82,22 @@
                 </div>
             
             </div>                      
-          <div id="result">   
-        </div>
+            
+            <div id="result"> 
+            </div>
         
     </div>
+
+    <footer>
+        <span>Enlaces</span>
+        
+        <div id="links">
+            <a href="https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">Peso Moneda Nacional</a>
+            <a href="https://es.wikipedia.org/wiki/Peso_Ley_18.188" target="_blank">Peso Ley</a>
+            <a href="https://es.wikipedia.org/wiki/Peso_argentino_(moneda)" target="_blank">Peso Argentino</a>
+            <a href="https://es.wikipedia.org/wiki/Austral_(moneda)" target="_blank">Austral</a>
+        </div>
+    </footer>
 
 </body>
 </html>
