@@ -40,11 +40,17 @@ function init() {
         console.log(mNacNot)
 
         //string mensaje salida
-        var strMnac = mNacValue + ' Pesos Moneda Nacional (1881 - 1969)';        
-        var strPley = pLeyValue + ' Pesos Ley 18.188 (1970 - 1983)';
-        var strParg = pArgValue + ' Pesos Argentinos (1983 - 1985)';
-        var strAust = austValue + ' Australes (1985 - 1991)';            
+        // var strMnac = mNacValue + ' Pesos Moneda Nacional (1881 - 1969)';        
+        // var strPley = pLeyValue + ' Pesos Ley 18.188 (1970 - 1983)';
+        // var strParg = pArgValue + ' Pesos Argentinos (1983 - 1985)';
+        // var strAust = austValue + ' Australes (1985 - 1991)';       
         
+        var strMnac = mNacValue;
+        var strPley = pLeyValue;
+        var strParg = pArgValue;
+        var strAust = austValue;    
+        
+
         //mostrar
         document.getElementById('r1').innerText=strMnac;
         document.getElementById('r2').innerText=strPley;
