@@ -33,8 +33,37 @@ span{
     display: block;
 }
 
+#r1,#r2,#r3,#r4{    
+    font-size: 1.3em;
+}
+
 .desc{
     display: none;
 }
+
+footer{
+    height: 200px;
+    width: 100%;    
+    padding: 10px; 
+    color: white;   
+    background-color: darkslategrey;
+}
+
+footer a , footer a:visited{
+    /* padding: 5px; */
+    display: block; 
+    color: white;   
+    text-decoration: none;        
+    padding-top: 10px;
+}
+
+footer div{
+    margin-top: 20px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 
 

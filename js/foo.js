@@ -13,8 +13,10 @@ function init() {
         
         if (importe==0 || importe==null){            
            result.style.display='none';            
+           $('.result').hide();
         }else{
            result.style.display='block';
+           $('.result').show();           
         }
         
         //importe
