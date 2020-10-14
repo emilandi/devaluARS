@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded',init);
 
 function init() {
@@ -16,15 +17,35 @@ function init() {
            result.style.display='block';
         }
         
-        monedas =  calcula(this.value);    
+        //importe
+        monedas = calcula(this.value);    
         
-        console.log(monedas);
-    
-        var strMnac = monedas[0] + ' Pesos Moneda Nacional';
-        var strPley = monedas[1] + ' Pesos Ley 18.188';
-        var strParg = monedas[2] + ' Pesos Argentinos';
-        var strAust = monedas[3] + ' Australes';
+        //conversion
+        var mNac = monedas[0];
+        var pLey = monedas[1];
+        var pArg = monedas[2];
+        var aust = monedas[3]; 
 
+        //formateo valores monedas 
+        var mNacValue = accounting.formatMoney(mNac, "", 2, ".", ","); 
+        var pLeyValue = accounting.formatMoney(pLey, "", 2, ".", ","); 
+        var pArgValue = accounting.formatMoney(pArg, "", 2, ".", ","); 
+        var austValue = accounting.formatMoney(aust, "", 2, ".", ","); 
+                
+        //formateo monedas notacion miles/millones/trillones
+        var mNacNot = numeral(mNac).format('$0.00a');
+        var pLeyNot  = numeral(pLey).format('$0.00a');
+        var pArgNot = numeral(pArg).format('$0.00a');
+        var austNot = numeral(aust).format('$0.00a');            
+        console.log(mNacNot)
+
+        //string mensaje salida
+        var strMnac = mNacValue + ' Pesos Moneda Nacional';        
+        var strPley = pLeyValue + ' Pesos Ley 18.188';
+        var strParg = pArgValue + ' Pesos Argentinos';
+        var strAust = austValue + ' Australes';            
+        
+        //mostrar
         document.getElementById('r1').innerText=strMnac;
         document.getElementById('r2').innerText=strPley;
         document.getElementById('r3').innerText=strParg;
@@ -34,27 +55,27 @@ function init() {
 
 }
 
+
+
 function calcula(importe) {
+   
+    /*
+    1peso Conervible = 
+    Peso Moneda Nacional 10.000.000.000.000
+    Peso Ley 18.188  100.000.000.000
+    Peso Argentino  10.000.000
+    Austral    10.000
+    */
 
-/*
+    var arrMonedas = [];
 
-1peso Conervible = 
+    var mNac = importe * 10000000000000;
+    var pLey = importe * 100000000000;
+    var pArg = importe * 10000000;
+    var aust = importe * 10000;
 
-Peso Moneda Nacional 10.000.000.000.000
-Peso Ley 18.188  100.000.000.000
-Peso Argentino  10.000.000
-Austral    10.000
+    arrMonedas = [mNac,pLey,pArg,aust];
 
-*/
-var arrMonedas = [];
-
-var mNac = importe * 10000000000000;
-var pLey = importe * 100000000000;
-var pArg = importe * 10000000;
-var aust = importe * 10000;
-
-arrMonedas = [mNac,pLey,pArg,aust];
-
-return arrMonedas;
+    return arrMonedas;
 
 }
