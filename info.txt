@@ -1,0 +1,41 @@
+
+
+
+Peso Moneda Nacional
+Vigencia: 1881 - 1969
+Símbolo monetario: m$n
+100 Centavos = 1 m$n
+
+
+Peso Ley 18.188
+Vigencia: 1970 - 1985
+Símbolo monetario: $ Ley
+Equivalencia: 1 $Ley = 100 m$n
+100 Centavos = 1 $Ley
+
+
+Peso Argentino
+Vigencia: 1983 - 1985
+Símbolo monetario: $a
+Equivalencia: 1 $a = 10.000 $Ley
+
+
+Austral
+Vigencia: 1985 - 1991
+Símbolo monetario: ?
+Equivalencia: 1 ? = 1.000 $a
+
+
+Peso Convertible
+Vigencia: 1992 - Hoy
+Símbolo monetario: $
+Equivalencia: 1 $ = 10.000 ?
+100 Centavos = 1 $
+
+
+1 peso convert
+
+moneda nac 10.000.000.000.000
+pesos ley 100.000.000.000
+peso arg 10.000.000
+austral 10.000
