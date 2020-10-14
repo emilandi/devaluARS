@@ -13,3 +13,18 @@ input{
 body{
     color:darkblue;
 }
+
+div.billetes{    
+    width: 100%;
+    height: 40%;
+    border-top: solid 0.2px grey;
+    padding-top: 10px;
+}
+
+.container-billetes{
+    margin-top: 20px;
+}
+
+img{
+    width: 60%;
+}

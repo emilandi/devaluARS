@@ -19,15 +19,43 @@
 <body>
     
     <div class="container">
+        
         <!-- <h3>CALCULADORA</h3> -->
         <h3>DevaluARS</h3>
         <input type="number" class="form-control" placeholder="Importe Pesos"  id="txtcantidad" class="" type="text">
-       
-        <div id="result">
-            <p id="r1"></p>
-            <p id="r2"></p>
-            <p id="r3"></p>
-            <p id="r4"></p>
+               
+        <!-- https://es.wikipedia.org/wiki/Peso_Moneda_Nacional
+        https://es.wikipedia.org/wiki/Peso_Ley_18.188
+        https://es.wikipedia.org/wiki/Peso_argentino_(moneda)
+        https://es.wikipedia.org/wiki/Peso_(moneda_de_Argentina) -->
+        
+            <div class="container-billetes">
+                <div class="billetes">
+                    <a href=" https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">
+                        <img src="pesosmnac10.png" alt=""> 
+                    </a>
+                    <p id="r1"></p>
+                </div>
+                <div class="billetes">
+                    <a href="https://es.wikipedia.org/wiki/Peso_Ley_18.188" target="_blank">
+                        <img src="pley18.jpg" alt=""> 
+                    </a>
+                    <p id="r2"></p>
+                </div>
+                <div class="billetes">
+                    <a href="https://es.wikipedia.org/wiki/Peso_argentino_(moneda)" target="_blank" >
+                        <img src="persoarg83.jpg" alt=""> 
+                    </a>                    
+                    <p id="r3"></p>
+                </div>
+                <div class="billetes">
+                    <a href="https://es.wikipedia.org/wiki/Austral_(moneda)" target="_blank">
+                        <img src="aust100.jpg" alt=""> 
+                    </a>
+                    <p id="r4"></p>
+                </div>
+            </div>                      
+          <div id="result">   
         </div>
         
     </div>
