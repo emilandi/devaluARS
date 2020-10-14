@@ -59,6 +59,13 @@ function init() {
     
     })
 
+
+    $('div.billetes a ').click(function(event) {        
+        event.preventDefault();                        
+        $(this).siblings('.desc').fadeToggle('fast');
+    });
+
+
 }
 
 

@@ -32,3 +32,9 @@ img{
 span{
     display: block;
 }
+
+.desc{
+    display: none;
+}
+
+
