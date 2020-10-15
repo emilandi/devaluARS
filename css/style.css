@@ -127,9 +127,20 @@ input[type=number] { -moz-appearance:textfield; }
       background-color: lightblue;
     }
 
+    img{
+        display: block;
+        margin: auto;
+    }
+
     .fullimg{
         /* width: 250px; */
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    div.billetes span {
+        text-align: center;
     }
     
     .result{
