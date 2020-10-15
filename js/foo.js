@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded',init);
 function init() {
     
     console.log('ready!');
-    document.getElementById('txtcantidad').focus();
+    document.getElementById('txtimporte').focus();
 
-    document.getElementById("txtcantidad").addEventListener('keyup',function () {
+    document.getElementById("txtimporte").addEventListener('keyup',function () {
         
         var importe = this.value;
         var result =  document.getElementById("result");
@@ -50,8 +50,7 @@ function init() {
         var strMnac = mNacValue;
         var strPley = pLeyValue;
         var strParg = pArgValue;
-        var strAust = austValue;    
-        
+        var strAust = austValue;        
 
         //mostrar
         document.getElementById('r1').innerText=strMnac;
@@ -61,16 +60,19 @@ function init() {
     
     })
 
-
-    $('div.billetes a ').click(function(event) {        
-        event.preventDefault();                        
+    $('div.billetes a').click(function(event) {        
+        event.preventDefault();
         $(this).siblings('.desc').fadeToggle('fast');
-    });
+    }); 
 
+    $('img').click(function(){
+        this.classList.toggle("fullimg");
+    })
+    
+    
+    
 
 }
-
-
 
 function calcula(importe) {
    
