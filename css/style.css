@@ -7,8 +7,15 @@ input{
 }
 
 #result {
-    margin-top: 30px;
+    margin-top: 30px;  
 } 
+
+
+.result{
+    color:blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-size: 1.8em !important;
+}
 
 body{
     color:darkblue;
@@ -123,5 +130,11 @@ input[type=number] { -moz-appearance:textfield; }
     .fullimg{
         /* width: 250px; */
         width: 100%;
+    }
+    
+    .result{
+        color:midnightblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+        font-size: 1.4em !important;
     }
   }
