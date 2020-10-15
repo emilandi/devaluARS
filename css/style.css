@@ -132,6 +132,11 @@ input[type=number] { -moz-appearance:textfield; }
         margin: auto;
     }
 
+    div.container h4{
+        /* padding-top: 25px; */
+        text-align: center;        
+    }
+
     .fullimg{
         /* width: 250px; */
         width: 100%;
@@ -142,7 +147,7 @@ input[type=number] { -moz-appearance:textfield; }
     div.billetes span {
         text-align: center;
     }
-    
+
     .result{
         color:midnightblue;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
