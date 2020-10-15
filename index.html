@@ -16,27 +16,35 @@
 
 </head>
 <body>
-    
-    <div class="container">
+    <header>
+        <a href="/">
+            <h3>DevaluARS</h3>
+        </a>
+    </header>
+    <div class="container">       
+   
+        <h4>Ingresa un importe en Pesos</h4>
+        <input type="number" class="form-control" placeholder="Importe Pesos"  id="txtimporte" class="" type="text">               
         
-        <!-- <h3>CALCULADORA</h3> -->
-        <h3>DevaluARS</h3>
-
-        <input type="number" class="form-control" placeholder="Importe Pesos"  id="txtcantidad" class="" type="text">               
-          
+        <span>             
+            Calcula la equivalencia del Peso actual (Peso convertible 1992)
+            respecto a las anteriores divisas Argentinas.
+        </span>  
+        
             <div class="container-billetes">
                 
-                <div class="billetes">
+                <div class="billetes">                
                     <a href="https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">
                         <img src="img/pesosmnac10.png" alt=""> 
-                    </a>
-                    <span>Pesos Moneda Nacional (1881 - 1969)</span>
-                    <p id="r1" class="result"></p>                
+                    </a>                                    
+                    <span>Pesos Moneda Nacional (1881 - 1969)</span>                
+                    <p id="r1" class="result"></p>                                
                     <span class="desc">El Peso Moneda Nacional (símbolo: m$n, ISO 4217: ARM) fue el papel moneda vigente en la Argentina en el período 1881-1969. 
                         Fue creado mediante la Ley 1.130, sancionada el 5 de noviembre de 1881 con el objetivo de unificar el sistema monetario en el país, que hasta ese entonces había sido bastante caótico debido a la variedad de tipos de moneda: pesos moneda corriente, Peso Fuerte y la libre circulación de monedas extranjeras. 
                         Esta ley determinó la unidad monetaria de la Argentina a través del peso oro y plata y dispuso que los bancos de emisión debían renovar toda su emisión de billetes a moneda nacional. 
-                        Los antiguos billetes se podían cambiar a la nueva moneda a razón de $m/c 25 = m$n 1.
-                    </span>               
+                        Los antiguos billetes se podían cambiar a la nueva moneda a razón de $m/c 25 = m$n 1.                                           
+                    </span>                                     
+                                   
                 </div>
                 
                 <div class="billetes">
@@ -87,17 +95,14 @@
         
     </div>
 
-    <footer>
-        
-        <span>Enlaces</span>
-        
+    <footer>        
+        <span>Enlaces</span>        
         <div id="links">
             <a href="https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">Peso Moneda Nacional</a>
             <a href="https://es.wikipedia.org/wiki/Peso_Ley_18.188" target="_blank">Peso Ley</a>
             <a href="https://es.wikipedia.org/wiki/Peso_argentino_(moneda)" target="_blank">Peso Argentino</a>
             <a href="https://es.wikipedia.org/wiki/Austral_(moneda)" target="_blank">Austral</a>
-        </div>
-        
+        </div>        
     </footer>
 
 </body>

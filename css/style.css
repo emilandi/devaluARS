@@ -27,9 +27,14 @@ div.billetes{
 }
 
 img{
-    width: 60%;
+    /* width: 60%; */
+    width: 250px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.fullimg{
+    width: 500px;
 }
 
 span{
@@ -76,4 +81,47 @@ footer span{
 
 a:hover{
     text-decoration: none;
+    color: whitesmoke;
 }
+
+a{
+    color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: darkslategrey;
+    color: whitesmoke;
+}
+
+header h3{
+    padding-top: 25px;
+    text-align: center;
+}
+
+#txtimporte{
+    margin-bottom: 10px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .fullimg{
+        /* width: 250px; */
+        width: 100%;
+    }
+  }
