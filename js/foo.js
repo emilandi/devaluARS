@@ -9,15 +9,13 @@ function init() {
     document.getElementById("txtimporte").addEventListener('keyup',function () {
         
         var importe = this.value;
-        var result =  document.getElementById("result");
+        // var result =  document.getElementById("result");        
         
-        if (importe==0 || importe==null){            
-           result.style.display='none';            
+        if (importe==0 || importe==null){                    
            $('.result').hide();
-        }else{
-           result.style.display='block';
+        }else{        
            $('.result').show();           
-        }
+        }        
         
         //importe
         monedas = calcula(this.value);    
@@ -66,11 +64,17 @@ function init() {
     }); 
 
     $('img').click(function(){
-        this.classList.toggle("fullimg");
-    })
+        this.classList.toggle("fullimg");          
+    })        
     
+    //mouserover
+    // $('img').mouseenter(function() {      
+    //     this.classList.toggle("fullimg");
+    // })
     
-    
+    // $('img').mouseleave(function() {        
+    //     this.classList.toggle("fullimg");          
+    // });
 
 }
 

@@ -3,15 +3,17 @@ input{
 }
 
 .container{
-    margin-top: 8%;    
+    margin-top: 2%;   
+    min-width: 800px; 
 }
 
-#result {
-    margin-top: 30px;  
-} 
-
-
 .result{
+    display: block;        
+}
+
+/* div, p{border: solid;} */
+
+.result p{
     color:blueviolet;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
     font-size: 1.8em !important;
@@ -21,40 +23,65 @@ body{
     color:darkblue;
 }
 
-div.billetes{    
-    width: 100%;
-    height: 40%;
+article{
+    height: 25%;
     border-top: 0.5px solid chocolate;
-    padding-top: 5px; 
-    padding-bottom: 5px;   
 }
 
 .container-billetes{
-    margin-top: 20px;
+    margin-top: 20px;  
+    height: 1500px;  
 }
 
-img{
-    /* width: 60%; */
-    width: 250px;
+img:hover{    
+    transition:all .30s ease-in-out;
+    -webkit-transform:scale(1.4);transform:scale(1.4);
+}
+
+div{
+    /* border: solid; */
+}
+
+.billetes{            
+    margin: 0;    
+    
+    /* padding-top: 5px;  */
+    /* padding-bottom: 5px;    */    
+    /* height: 60%; */ 
+    /* float: left; */
+}
+
+.desc{            
+    width: 30%;    
+     /* height: 100%; */    
+}
+
+div.billetes p {
+    float: right;
+    width: 60%;
+    padding: 10px;
+}
+
+
+div.billetes a img{
+    /* width: 60%; */    
+    width: 35%;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px;    
 }
 
-.fullimg{
-    width: 500px;
+.fullimg{    
+    /* width:50% !important; */
+    transition:all .30s ease-in-out;
+    -webkit-transform:scale(1.4);transform:scale(1.4);
 }
 
-span{
-    display: block;
-}
 
 #r1,#r2,#r3,#r4{    
     font-size: 1.3em;
 }
 
-.desc{
-    display: none;
-}
+
 
 footer{
     height: 200px;
